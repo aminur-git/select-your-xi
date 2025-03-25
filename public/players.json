@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "player_img": "https://ibb.co.com/7d3Qbcg4",
+      "name": "John Smith",
+      "location": "Australia",
+      "role": "Batsman",
+      "rating": 4.5,
+      "hand_side": "Right-hand bat",
+      "price": 1200000
+    },
+    {
+      "id": 2,
+      "player_img": "https://ibb.co.com/4gKk72C8",
+      "name": "David Miller",
+      "location": "South Africa",
+      "role": "All-rounder",
+      "rating": 4.8,
+      "hand_side": "Left-hand bat",
+      "price": 2000000
+    },
+    {
+      "id": 3,
+      "player_img": "https://ibb.co.com/bRQYTBVV",
+      "name": "Kane Williamson",
+      "location": "New Zealand",
+      "role": "Batsman",
+      "rating": 4.9,
+      "hand_side": "Right-hand bat",
+      "price": 1800000
+    },
+    {
+      "id": 4,
+      "player_img": "https://ibb.co.com/fzDyy7zz",
+      "name": "Jasprit Bumrah",
+      "location": "India",
+      "role": "Bowler",
+      "rating": 4.7,
+      "hand_side": "Right-arm fast",
+      "price": 1500000
+    },
+    {
+      "id": 5,
+      "player_img": "https://ibb.co.com/KjghzLw7",
+      "name": "Ben Stokes",
+      "location": "England",
+      "role": "All-rounder",
+      "rating": 4.6,
+      "hand_side": "Left-hand bat",
+      "price": 2200000
+    },
+    {
+      "id": 6,
+      "player_img": "https://ibb.co.com/mCTTv9MK",
+      "name": "Babar Azam",
+      "location": "Pakistan",
+      "role": "Batsman",
+      "rating": 4.9,
+      "hand_side": "Right-hand bat",
+      "price": 1900000
+    }
+  ]
