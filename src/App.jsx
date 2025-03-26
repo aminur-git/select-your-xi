@@ -6,12 +6,14 @@ import ButtonGroups from "./Buttons/ButtonGroups";
 import Render from "./RenderComponent/Render";
 import Cards from "./Cards/Cards";
 import Teams from "./Teams/Teams";
+import NewsLater from "./Newsletter/NewsLater";
+import Footer from "./Footer/Footer";
 
 function App() {
   const [coin, setCoin] = useState(0);
-  const buttons = ["Available", "Selected"]
+  const buttons = ["Available", "Selected"];
+  const [isSelected, setIsSelected] = useState(0);
   const [teams, setteams] = useState([]);
-
 
   const handleClickCoin = () => {
     console.log("clicked");
@@ -19,39 +21,39 @@ function App() {
   };
 
   const handleClickChoose = (card) => {
-    console.log(card)
-    const {price} = card
-    if(price < coin){
-      setCoin(coin - price)
-      setteams([...teams , card]) 
-      alert('প্লেয়ার যোগ করা হয়েছে।')
+    console.log(card);
+    const { price } = card;
+    if (price < coin) {
+      setCoin(coin - price);
+      setteams([...teams, card]);
+      alert("প্লেয়ার যোগ করা হয়েছে।");
+    } else {
+      alert("ক্রেডিট ক্লেইম করেন!");
     }
-    else{
-      alert('ক্রেডিট ক্লেইম করেন!')
-    }
-  }
-
-
-
-  const [isSelected, setIsSelected] = useState(0)
-
-
-
-
-
+  };
 
   return (
     <>
-    
       <div className="space-y-10">
         <Navbar coin={coin}></Navbar>
         <Banner handleClickCoin={handleClickCoin}></Banner>
         <div>
-        <ButtonGroups buttons={buttons} isSelected={isSelected} setIsSelected={setIsSelected}></ButtonGroups>
-        <Render idx={isSelected} handleClickChoose={handleClickChoose} teams={teams} setteams={setteams} ></Render>
-        
+          <ButtonGroups
+            buttons={buttons}
+            isSelected={isSelected}
+            setIsSelected={setIsSelected}
+          ></ButtonGroups>
+          <Render
+            idx={isSelected}
+            handleClickChoose={handleClickChoose}
+            teams={teams}
+            setteams={setteams}
+          ></Render>
         </div>
-        <h1></h1>
+        <div className="mt-24 ">
+          <NewsLater className=""></NewsLater>
+          <Footer></Footer>
+        </div>
       </div>
     </>
   );

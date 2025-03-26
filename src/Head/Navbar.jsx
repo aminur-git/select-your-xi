@@ -6,7 +6,7 @@ const Navbar = ({coin}) => {
   return (
     <div className="flex justify-between items-center">
       <img src={logo} alt="" />
-      <div className="hidden sm:flex items-center justify-end gap-8 text-[#131313B3] text-base ">
+      <div className="hidden sm:flex items-center justify-end gap-8 font-medium text-[#131313B3] text-base ">
         <a href="">Home</a><a href="">Fixture</a><a href="">Teams</a><a href="">Schedules</a>
       </div>
       <div>
