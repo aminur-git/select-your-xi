@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
 
-const Cards = ({handleClickChoose}) => {
+const Cards = ({handleClickChoose, teams}) => {
     const [cards, setCards] = useState([])
     
     useEffect(()=>{
@@ -12,10 +12,13 @@ const Cards = ({handleClickChoose}) => {
 
 
     return (
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8'>
+        <div >
+            <h2 className='font-bold text-2xl'>Available Players</h2>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8'>
             {
                 cards.map((card, idx)=> <Card key={idx} card={card} handleClickChoose={handleClickChoose}></Card> )
             }
+            </div>
         </div>
     );
 };

@@ -44,7 +44,7 @@ const Card = ({ card, handleClickChoose }) => {
         </div>
         <div className="flex justify-between items-center" >
           <div><h2 className="font-medium">Price: {price}$ </h2></div>
-          <div><button onClick={()=> handleClickChoose({price})} className="text-black font-semibold px-4 border-1 border-gray-400 rounded-sm cursor-pointer hover:bg-[#E7FE29]">Choose</button></div>
+          <div><button onClick={()=> handleClickChoose(card)} className="text-black font-semibold px-4 border-1 border-gray-400 rounded-sm cursor-pointer hover:bg-[#E7FE29]">Choose</button></div>
         </div>
       </div>
     </div>
