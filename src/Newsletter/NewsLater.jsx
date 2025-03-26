@@ -5,14 +5,14 @@ import btn_bg from "../assets/btn-bg.jpg";
 
 const NewsLater = () => {
   return (
-    <div className="shadow">
+    <div className="">
       <div
         style={{
           backgroundImage: `url(${overlay}), url(${background}) `,
           backgroundRepeat: "no-repeat, no-repeat",
           backgroundSize: "cover, cover",
         }}
-        className="flex flex-col justify-center items-center text-center max-w-2xl mx-auto shadow md:px-20 py-10 space-y-8 rounded-md"
+        className="flex flex-col justify-center items-center text-center max-w-2xl mx-auto shadow px-2 md:px-20 py-10 space-y-8 rounded-md"
       >
         <div className="space-y-2">
           <h1 className="text-2xl md:text-3xl font-bold ">Subscribe to our Newsletter</h1>
@@ -23,7 +23,7 @@ const NewsLater = () => {
         <form action="">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <input
-              className="border-1 border-gray-200  pl-4 pr-28 py-3 rounded-md "
+              className="border-1 border-gray-200  pl-4 pr-20 sm:pr-28 py-3 rounded-md "
               placeholder="Enter your email"
               type="email"
               name=""
