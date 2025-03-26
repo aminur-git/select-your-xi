@@ -15,13 +15,13 @@ const NewsLater = () => {
         className="flex flex-col justify-center items-center text-center max-w-2xl mx-auto shadow px-20 py-10 space-y-8 rounded-md"
       >
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold ">Subscribe to our Newsletter</h1>
-          <p className="text-base font-medium text-[#131313B3]">
+          <h1 className="text-2xl md:text-3xl font-bold ">Subscribe to our Newsletter</h1>
+          <p className="text-xs md:text-base font-medium text-[#131313B3]">
             Get the latest updates and news right in your inbox!
           </p>
         </div>
         <form action="">
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <input
               className="border-1 border-gray-200  pl-4 pr-28 py-3 rounded-md "
               placeholder="Enter your email"

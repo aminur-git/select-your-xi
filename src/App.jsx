@@ -50,7 +50,7 @@ function App() {
             setteams={setteams}
           ></Render>
         </div>
-        <div className="mt-24 ">
+        <div className="mt-24">
           <NewsLater className=""></NewsLater>
           <Footer></Footer>
         </div>

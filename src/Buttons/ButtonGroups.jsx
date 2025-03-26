@@ -6,7 +6,7 @@ const ButtonGroups = ({buttons, isSelected, setIsSelected}) => {
 
     return (
         <div>
-            <div className='flex gap-3 justify-end'>
+            <div className='flex gap-3 justify-center md:justify-end pb-5'>
                 {
                     buttons.map((text, idx)=>{
                         return <button key={idx}
