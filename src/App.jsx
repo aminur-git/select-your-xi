@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <div className="space-y-10">
+      <div className="space-y-10 max-w-7xl mx-auto p-4">
         <Navbar coin={coin}></Navbar>
         <Banner handleClickCoin={handleClickCoin}></Banner>
         <div>
@@ -52,8 +52,10 @@ function App() {
         </div>
         <div className="mt-24">
           <NewsLater className=""></NewsLater>
-          <Footer></Footer>
         </div>
+      </div>
+      <div className="bg-black">
+      <Footer></Footer>
       </div>
     </>
   );
